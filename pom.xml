@@ -12,8 +12,29 @@
         <maven.compiler.source>24</maven.compiler.source>
         <maven.compiler.target>24</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <telegram.version>6.0.1</telegram.version>
     </properties>
 
+    <dependencies>
+        <!-- Telegram API -->
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>${telegram.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambotsextensions</artifactId>
+            <version>${telegram.version}</version>
+        </dependency>
+<!--        &lt;!&ndash; Lombok &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <version>${org.projectlombok.version}</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+    </dependencies>
 
 
 </project>
