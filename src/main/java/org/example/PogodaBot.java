@@ -18,6 +18,11 @@ public class PogodaBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        System.out.println(update);
+       // System.out.println(update);
+
+        var msg = update.getMessage();
+        var user = msg.getFrom();
+
+        System.out.println(user.getFirstName() + " wrote " + msg.getText());
     }
 }
