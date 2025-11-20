@@ -6,9 +6,9 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class Main {
 
-    public static void main(String[] args) throws TelegramApiException {
-        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-        botsApi.registerBot(new PogodaBot());
+    public static void main(String[] args) throws TelegramApiException { //запуск
+        TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class); //Создает экземпляр API для работы с Telegram
+        botsApi.registerBot(new PogodaBot()); //Регистрация бота, получение сообщений от пользователей
     }
 
 }
